@@ -135,10 +135,9 @@
       <figure><img src="assets/zenmarket/diagramme-classes.png" alt="Diagramme de classes ZenMarket"><figcaption>UML — Classes</figcaption></figure>
       <figure><img src="assets/zenmarket/mcd.png" alt="Modèle conceptuel de données ZenMarket"><figcaption>Merise — MCD</figcaption></figure>
       <figure><img src="assets/zenmarket/architecture-globale.png" alt="Architecture globale ZenMarket"><figcaption>Architecture globale</figcaption></figure>
-      <figure><img src="assets/zenmarket/activite-recherche-ia.png" alt="Diagramme d'activité de la recherche IA"><figcaption>UML — Activité (recherche IA)</figcaption></figure>
-      <figure><img src="assets/zenmarket/sequence-recherche-ia.png" alt="Diagramme de séquence de la recherche IA"><figcaption>UML — Séquence (recherche IA)</figcaption></figure>
       <figure><img src="assets/zenmarket/activite-connexion-bruteforce.png" alt="Diagramme d'activité de la connexion avec protection brute-force"><figcaption>UML — Activité (authentification)</figcaption></figure>
       <figure><img src="assets/zenmarket/sequence-connexion.png" alt="Diagramme de séquence de la connexion"><figcaption>UML — Séquence (authentification)</figcaption></figure>
+      <figure><img src="assets/zenmarket/sequence-commande-stripe.png" alt="Diagramme de séquence de la commande et du paiement Stripe"><figcaption>UML — Séquence (commande &amp; paiement Stripe)</figcaption></figure>
     </div>
 
     <div class="links-row">
@@ -245,6 +244,33 @@
           <li>Journalisation des actions avec Serilog, rapport d'exécution détaillé</li>
           <li>Tests unitaires xUnit sur les règles de sécurité et les catégories de nettoyage</li>
         </ul>
+      </div>
+
+      <!-- Recherche IA -->
+      <div class="project-card">
+        <h3>Recherche IA — ZenMarket</h3>
+        <div class="meta">Fonctionnalité phare, cœur du positionnement du projet</div>
+        <div class="badges">
+          <span class="badge">IA générative (Gemini)</span><span class="badge">Recherche sémantique</span>
+          <span class="badge">Node.js / Express</span><span class="badge">React</span>
+        </div>
+        <p>
+          Plutôt qu'une recherche par filtres rigides, ZenMarket permet de décrire ce que l'on
+          cherche en langage naturel (par exemple « quelque chose pour me détendre après le
+          travail ») et propose les produits les plus pertinents. C'est l'argument central qui a
+          motivé ce projet plutôt qu'un e-commerce généraliste : offrir un accompagnement
+          individualisé, assisté par IA, plutôt qu'une simple vitrine catalogue.
+        </p>
+        <p>
+          Architecture en cascade : appel prioritaire à un modèle génératif (Gemini) pour
+          interpréter la requête, avec un repli sémantique par mots-clés si l'appel échoue ou est
+          indisponible — pour que la recherche reste fonctionnelle même sans IA disponible.
+        </p>
+        <div class="card-imgs">
+          <img src="assets/zenmarket/interface-recherche-ia.png" alt="Interface de la recherche IA ZenMarket">
+          <img src="assets/zenmarket/activite-recherche-ia.png" alt="Diagramme d'activité de la recherche IA">
+          <img src="assets/zenmarket/sequence-recherche-ia.png" alt="Diagramme de séquence de la recherche IA">
+        </div>
       </div>
 
       <!-- Tests & CI/CD -->
