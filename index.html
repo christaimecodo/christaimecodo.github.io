@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Christaime CODO — Portfolio Data Analyst</title>
+<meta name="description" content="Portfolio de Christaime CODO — Data Analyst en alternance. Projets : ZenMarket, HightechMarket, WebAuthAPI, et plus.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a class="brand" href="#top">Christaime CODO</a>
+    <div class="links">
+      <a href="#data-analyst">Data Analyst</a>
+      <a href="#zenmarket">ZenMarket</a>
+      <a href="#projets">Projets</a>
+      <a href="#edidebs">Expérience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <h1>Christaime CODO</h1>
+    <p class="title">Data Analyst — Alternance</p>
+    <p class="lead">
+      Développeur web en reconversion vers l'analyse de données, avec une double compétence
+      technique (développement full-stack) et analytique (Python, SQL, visualisation de
+      données). Ce portfolio présente l'ensemble des projets réalisés durant ma formation
+      Concepteur Développeur d'Applications (CDA) et mon stage en entreprise.
+    </p>
+    <p class="contact-line">
+      codochristaime@gmail.com ·
+      <a href="https://github.com/christaimecodo" target="_blank" rel="noopener">github.com/christaimecodo</a> ·
+      <a href="https://gitlab.com/christaimecodo" target="_blank" rel="noopener">gitlab.com/christaimecodo</a>
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#data-analyst">Voir le volet Data Analyst</a>
+      <a class="btn btn-outline" href="#projets">Voir tous les projets</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= DATA ANALYST ================= -->
+<section id="data-analyst">
+  <div class="container">
+    <h2 class="section-title">Volet Data Analyst</h2>
+    <p class="section-sub">
+      Analyse des ventes de la plateforme ZenMarket, de l'extraction des données jusqu'aux
+      tableaux de bord. Données 100% simulées (Faker, SEED=42) : la base de données réelle
+      étant trop restreinte (14 utilisateurs, 14 produits, 42 commandes), un jeu de données
+      simulé et documenté a été utilisé pour produire des analyses représentatives.
+    </p>
+
+    <div class="stat-row">
+      <div class="stat-card"><div class="num">28 111 €</div><div class="label">CA payé (données simulées)</div></div>
+      <div class="stat-card"><div class="num">410</div><div class="label">commandes payées / 520</div></div>
+      <div class="stat-card"><div class="num">155</div><div class="label">clients distincts / 180</div></div>
+      <div class="stat-card"><div class="num">0,79</div><div class="label">corrélation note ↔ ventes</div></div>
+    </div>
+
+    <div class="img-grid">
+      <figure>
+        <img src="assets/zenmarket/top-categories-produits.png" alt="Chiffre d'affaires par catégorie et top produits">
+        <figcaption>CA par catégorie &amp; top produits</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/zenmarket/evolution-ventes.png" alt="Évolution mensuelle du chiffre d'affaires">
+        <figcaption>Évolution mensuelle du CA</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/zenmarket/power-bi-dashboard.png" alt="Dashboard Power BI">
+        <figcaption>Dashboard Power BI</figcaption>
+      </figure>
+    </div>
+
+    <div class="links-row">
+      <a href="https://github.com/christaimecodo/zenmarket-data-analytics/blob/main/data-analysis/analyse-ventes-zenmarket.ipynb" target="_blank" rel="noopener">Notebook Python/pandas</a>
+      <a href="https://github.com/christaimecodo/zenmarket-data-analytics/blob/main/data-analysis/exports/analyse-ventes.xlsx" target="_blank" rel="noopener">Export Excel (TCD)</a>
+      <a href="https://datastudio.google.com/reporting/c41e42f9-87a2-42bf-9ed0-f1e260f98771" target="_blank" rel="noopener">Dashboard Looker Studio</a>
+      <a href="https://github.com/christaimecodo/zenmarket-data-analytics" target="_blank" rel="noopener">Code complet sur GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ZENMARKET (PHARE) ================= -->
+<section class="alt project-phare" id="zenmarket">
+  <div class="container">
+    <h2 class="section-title">Projet phare — ZenMarket</h2>
+    <p class="section-sub">
+      E-commerce dédié au bien-être, avec recherche produit assistée par IA. Projet personnel
+      mené de bout en bout durant la formation CDA (RNCP Niveau 6) : conception, développement,
+      tests, sécurité, CI/CD, puis volet Data Analyst.
+    </p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h3>Volet Data Analyst</h3>
+        <p>Notebook Python/pandas, export Excel avec tableaux croisés dynamiques natifs,
+        dashboards Looker Studio et Power BI, jeu de données simulé et documenté (Faker).</p>
+      </div>
+      <div class="pillar">
+        <h3>Conception &amp; gestion de projet</h3>
+        <p>Modélisation UML complète (cas d'utilisation, classes, séquence, activité),
+        modélisation Merise (MCD/MLD), planification Scrum, maquettage UX/UI sous Figma.</p>
+      </div>
+      <div class="pillar">
+        <h3>Développement full-stack</h3>
+        <p>React (frontend + dashboard admin), Node.js/Express, PostgreSQL, recherche IA,
+        84 tests automatisés (Vitest, Supertest, Playwright), intégration continue GitLab CI.</p>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <figure><img src="assets/zenmarket/interface-accueil.png" alt="Page d'accueil ZenMarket"><figcaption>Interface — Accueil</figcaption></figure>
+      <figure><img src="assets/zenmarket/interface-catalogue.png" alt="Catalogue produits ZenMarket"><figcaption>Interface — Catalogue</figcaption></figure>
+      <figure><img src="assets/zenmarket/interface-dashboard-stats.png" alt="Dashboard admin ZenMarket"><figcaption>Dashboard admin</figcaption></figure>
+      <figure><img src="assets/zenmarket/maquette-figma.png" alt="Maquette Figma ZenMarket"><figcaption>Maquette Figma</figcaption></figure>
+      <figure><img src="assets/zenmarket/uc-client.png" alt="Diagramme de cas d'utilisation client"><figcaption>UML — Cas d'utilisation</figcaption></figure>
+      <figure><img src="assets/zenmarket/diagramme-classes.png" alt="Diagramme de classes ZenMarket"><figcaption>UML — Classes</figcaption></figure>
+      <figure><img src="assets/zenmarket/mcd.png" alt="Modèle conceptuel de données ZenMarket"><figcaption>Merise — MCD</figcaption></figure>
+      <figure><img src="assets/zenmarket/architecture-globale.png" alt="Architecture globale ZenMarket"><figcaption>Architecture globale</figcaption></figure>
+    </div>
+
+    <div class="links-row">
+      <a href="https://github.com/christaimecodo/zenmarket-data-analytics" target="_blank" rel="noopener">Code &amp; README complet sur GitHub →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AUTRES PROJETS ================= -->
+<section id="projets">
+  <div class="container">
+    <h2 class="section-title">Autres projets</h2>
+    <p class="section-sub">
+      Projets réalisés durant la formation CDA, illustrant d'autres facettes techniques :
+      travail en binôme, architectures multi-bases, écosystème .NET, conception pure, et
+      développement desktop.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- HightechMarket -->
+      <div class="project-card">
+        <h3>HightechMarket</h3>
+        <div class="meta">Projet école (binôme) · sept. 2025 – juin 2026</div>
+        <div class="badges">
+          <span class="badge">React 19</span><span class="badge">React Native / Expo</span>
+          <span class="badge">Node.js / Express</span><span class="badge">MongoDB</span>
+          <span class="badge">MySQL</span><span class="badge">Vitest</span><span class="badge">GitLab CI</span>
+        </div>
+        <p>
+          E-commerce high-tech réalisé à deux, couvrant 3 plateformes : web (React), API
+          d'authentification séparée en .NET, et version mobile (React Native/Expo, persistance
+          locale SQLite). Choix pédagogique délibéré d'une double base de données : MongoDB
+          (catalogue produits, schéma flexible) et MySQL (utilisateurs, intégrité relationnelle
+          stricte). Conception complète en amont : maquettes Figma, diagrammes UML (cas
+          d'utilisation, séquence, activité, classes) et MCD.
+        </p>
+        <ul>
+          <li>Contextes React (panier, session) pour éviter le prop drilling</li>
+          <li>Authentification hachée (bcrypt), validations client/serveur</li>
+          <li>Tests unitaires/intégration (Vitest, React Testing Library) sur les formulaires critiques</li>
+          <li>Pipeline GitLab CI avec rapport de couverture de code</li>
+        </ul>
+      </div>
+
+      <!-- WebAuthAPI -->
+      <div class="project-card">
+        <h3>WebAuthAPI</h3>
+        <div class="meta">Projet école · module backend .NET</div>
+        <div class="badges">
+          <span class="badge">C# / ASP.NET Core</span><span class="badge">Entity Framework Core</span>
+          <span class="badge">SQL Server</span><span class="badge">JWT</span><span class="badge">Swagger</span>
+        </div>
+        <p>
+          API d'authentification en ASP.NET Core, développée pour pratiquer un second
+          écosystème backend (C#/.NET) en complément de Node.js. Architecture en couches
+          stricte : Controllers → Services → Repository (via Entity Framework Core, approche
+          Code First) → base SQL Server, avec des DTOs séparés des modèles internes.
+        </p>
+        <ul>
+          <li>Authentification JWT avec <strong>rotation de refresh tokens</strong> (un nouveau
+          token est émis et l'ancien invalidé à chaque renouvellement)</li>
+          <li>Documentation API générée automatiquement avec Swagger/OpenAPI</li>
+          <li>Contrôleurs Auth et Produit, migrations de base de données automatisées</li>
+        </ul>
+      </div>
+
+      <!-- Projet Gestion de Commande -->
+      <div class="project-card">
+        <h3>Gestion de Commande</h3>
+        <div class="meta">Exercice de conception (UML &amp; Merise)</div>
+        <div class="badges">
+          <span class="badge">UML</span><span class="badge">Merise</span>
+          <span class="badge">Visual Paradigm</span><span class="badge">SQL</span>
+        </div>
+        <p>
+          Exercice de modélisation pure, sans implémentation : diagramme d'activité, diagramme
+          de classes et modélisation Merise complète (MCD → MLD → script SQL) pour un système
+          de gestion de commandes.
+        </p>
+        <div class="card-imgs">
+          <img src="assets/gestion-commande/activite.jpg" alt="Diagramme d'activité Gestion de commande">
+          <img src="assets/gestion-commande/classe.jpg" alt="Diagramme de classe Gestion de commande">
+          <img src="assets/gestion-commande/mcd.jpg" alt="MCD Gestion de commande">
+          <img src="assets/gestion-commande/mld.jpg" alt="MLD Gestion de commande">
+        </div>
+      </div>
+
+      <!-- SwiftClean -->
+      <div class="project-card">
+        <h3>SwiftClean</h3>
+        <div class="meta">Projet personnel · logiciel desktop</div>
+        <div class="badges">
+          <span class="badge">C# / WPF</span><span class="badge">.NET 8</span>
+          <span class="badge">MVVM</span><span class="badge">Serilog</span><span class="badge">xUnit</span>
+        </div>
+        <p>
+          Logiciel desktop de nettoyage de fichiers Windows (fichiers temporaires, miniatures,
+          corbeille, logs, dossiers personnalisés), en architecture WPF/MVVM avec séparation
+          Core/Infrastructure. Conçu avec un <strong>mode simulation (dry-run) activé par
+          défaut</strong> pour ne jamais supprimer un fichier sans confirmation explicite.
+        </p>
+        <ul>
+          <li>Journalisation des actions avec Serilog, rapport d'exécution détaillé</li>
+          <li>Tests unitaires xUnit sur les règles de sécurité et les catégories de nettoyage</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDIDEBS (TEXTE UNIQUEMENT) ================= -->
+<section class="alt" id="edidebs">
+  <div class="container">
+    <h2 class="section-title">Expérience en entreprise — Edidebs</h2>
+    <p class="section-sub">Stage développeur, application bancaire — description textuelle uniquement, sans capture d'écran (projet d'un employeur réel, confidentialité produit).</p>
+
+    <div class="timeline-item">
+      <h3>Application desktop bancaire (JavaFX)</h3>
+      <div class="meta">Stage — juin à août 2026</div>
+      <ul>
+        <li>Intégration dans une base de code et une architecture existantes (client-serveur en
+        couches, communication via microservices Auth/Bank) plutôt qu'un projet conçu de A à Z.</li>
+        <li>Diagnostic par élimination d'un bug d'affichage entre deux microservices ne
+        communiquant pas, et correction d'un bug de format numérique (virgule/point décimal).</li>
+        <li>Refonte visuelle complète d'un écran (carte bancaire interactive, jauges Canvas,
+        composants personnalisés) à partir d'une maquette fournie.</li>
+        <li>Prise en charge de la chaîne de packaging desktop : génération d'un JAR autonome
+        (Maven Shade), conversion en exécutable Windows (Launch4j), puis construction d'un
+        runtime Java autonome (jlink) pour une distribution sans installation préalable.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <h3>Application mobile bancaire (Flutter)</h3>
+      <div class="meta">Mission en cours</div>
+      <ul>
+        <li>Développement d'écrans à partir de maquettes Figma fournies (accueil, comptes,
+        compte courant, notifications, envoi d'argent), en collaboration avec l'équipe sur des
+        branches Git séparées.</li>
+        <li>Implémentation d'un parcours de virement en 4 étapes (montant, bénéficiaire,
+        récapitulatif, code PIN) entièrement connecté au service métier réel.</li>
+        <li>Investigation et correction d'une régression introduite par un collègue : un écran
+        affichait un message de succès sans jamais appeler le service de transfert réel.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="container">
+    <p><strong>Christaime CODO</strong> — Data Analyst en alternance</p>
+    <p>
+      <a href="mailto:codochristaime@gmail.com">codochristaime@gmail.com</a> ·
+      <a href="https://github.com/christaimecodo" target="_blank" rel="noopener">GitHub</a> ·
+      <a href="https://gitlab.com/christaimecodo" target="_blank" rel="noopener">GitLab</a>
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
