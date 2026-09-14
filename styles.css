@@ -62,8 +62,8 @@ header.hero {
   padding: 76px 0 60px;
   border-bottom: 3px solid var(--terracotta);
 }
-header.hero h1 { font-size: 42px; font-weight: 700; margin: 0 0 8px; color: var(--text-light); }
-header.hero .title { color: var(--terracotta); font-weight: 600; font-size: 19px; margin: 0 0 18px; }
+header.hero .eyebrow { color: var(--terracotta); font-weight: 600; font-size: 15px; letter-spacing: 0.03em; margin: 0 0 10px; }
+header.hero h1 { font-size: 42px; font-weight: 700; margin: 0 0 18px; color: var(--text-light); }
 header.hero p.lead { max-width: 700px; color: var(--muted-light); font-size: 16.5px; }
 .contact-line { margin-top: 20px; font-size: 14px; color: var(--muted-light); }
 .contact-line a { color: var(--terracotta); margin-right: 4px; }
