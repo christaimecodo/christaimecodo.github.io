@@ -180,6 +180,66 @@ footer {
 footer p:first-child { font-size: 17px; font-weight: 700; color: var(--text-light); margin-bottom: 6px; }
 footer a { color: var(--terracotta); }
 
+/* ---- Visuels cliquables (agrandissement plein écran) ---- */
+.img-grid img, .gallery img, .card-imgs img {
+  cursor: zoom-in;
+  transition: opacity 0.15s ease;
+}
+.img-grid img:hover, .gallery img:hover, .card-imgs img:hover {
+  opacity: 0.85;
+}
+
+.lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 16, 13, 0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.lightbox-overlay.open { display: flex; }
+.lightbox-overlay img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 4px;
+  border: 1px solid var(--border-dark);
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+}
+.lightbox-overlay img.zoomed {
+  max-width: none;
+  max-height: none;
+  width: auto;
+  height: auto;
+  transform: scale(1.6);
+  cursor: zoom-out;
+}
+.lightbox-close {
+  position: fixed;
+  top: 22px;
+  right: 28px;
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 34px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 1001;
+}
+.lightbox-close:hover { color: var(--terracotta); }
+.lightbox-caption {
+  position: fixed;
+  bottom: 22px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--muted-light);
+  font-size: 13px;
+  z-index: 1001;
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .project-phare .pillars { grid-template-columns: 1fr; }

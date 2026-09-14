@@ -296,5 +296,57 @@
   </div>
 </footer>
 
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Fermer">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+  <p class="lightbox-caption" id="lightbox-caption"></p>
+</div>
+
+<script>
+(function () {
+  var overlay = document.getElementById('lightbox');
+  var img = document.getElementById('lightbox-img');
+  var caption = document.getElementById('lightbox-caption');
+  var closeBtn = document.getElementById('lightbox-close');
+
+  function openLightbox(src, alt) {
+    img.src = src;
+    img.alt = alt || '';
+    img.classList.remove('zoomed');
+    caption.textContent = alt || '';
+    overlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    overlay.classList.remove('open');
+    img.classList.remove('zoomed');
+    document.body.style.overflow = '';
+  }
+
+  var targets = document.querySelectorAll('.img-grid img, .gallery img, .card-imgs img');
+  for (var i = 0; i < targets.length; i++) {
+    targets[i].addEventListener('click', function () {
+      openLightbox(this.getAttribute('src'), this.getAttribute('alt'));
+    });
+  }
+
+  img.addEventListener('click', function (e) {
+    e.stopPropagation();
+    img.classList.toggle('zoomed');
+  });
+
+  closeBtn.addEventListener('click', closeLightbox);
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay) closeLightbox();
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && overlay.classList.contains('open')) closeLightbox();
+  });
+})();
+</script>
+
 </body>
 </html>
